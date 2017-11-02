@@ -1,3 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 #titulo-sitio {
 	size: 4em;
 	color: #d39a0a;
@@ -21,21 +38,16 @@ iii.   Y  luego  de  ser  visitado,  toma  el  color:  #7c652e
 */
 
 body {
-	background-image: url('http://www.elchurra.net/.imaging/stk/hTtGeneric/bootstrapGalleryImageBig/dms/multiHotel-churra-vistalegre/restaurante-elchurra-8/document/restaurante-elchurra-8.jpg');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	background-color: white;
 }
 
 .resumen-receta {
 	border-radius: 15px;
-	background-color: gray;
 	font-variant: small-caps;
 	margin: 5px;
-	width: 18%;
 	display: inline-block;
 	padding: 5px;
-	background-image: url('fondomini.jpg');
-	background-size: 100% 100%;
+	background-color: gray;
 }
 
 .resumen-receta > h3 {
@@ -65,5 +77,24 @@ body {
 }
 
 .detalle-receta {
-	border-bottom: 1pt dotted #d7d8cb;
+	border-bottom: 3pt dotted #d7d8cb;
+}
+
+@media screen and (max-width: 500px){
+	[class*="col-"] {
+		width: 100% !important;
+	}
+
+	/* body, html {
+		overflow-x: hidden;
+	} */
+
+	#titulo-sitio {
+		text-align: center;
+	}
+
+	.resumen-receta {
+		margin: 5px 0 5px 0;
+	}
+	
 }
