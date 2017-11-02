@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="Hoja de vida">
 		<meta name="keywords" content="nombre, datos, habilidades, educacion">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="estilo.css">
 		<title>Hoja de vida</title>
 	</head>
@@ -13,23 +14,27 @@
 			<h1>Hoja de vida</h1>
 		</header>
 		<section>
-			<div class="bloque" id="general">
-				<header>
-					<h2>Alexis Leonardo Rivadeneira Sevilla</h2>
-				</header>
-				<span id="foto"><img src="201506161.jpg" alt="Oh crap"></span>
-				<span id="info">
+			<div id="encabezado" class="bloque col-8" id="general">
+				<div class="container">
+					<div class="center">
+						<header>
+							<h2 id="nombre">Alexis Leonardo Rivadeneira Sevilla</h2>
+						</header>
+					</div>
+					<span id="foto"><img src="201506161.jpg" alt="Oh crap"></span>
+				</div>
+				<div id="info">
 					<p>
 						Estudiante de Ingenieria en Computacion<br>
 						ESPOL<br>
 						Guayaquil - Ecuador<br>
 					</p>
-				</span>
+				</div>
 			</div>
 			
-			<div class="bloque" id="datos">
+			<div class="bloque col-8" id="datos">
 				<header>
-					<h2>Datos Personales</h2>
+					<h2 id="titulo-datos">Datos Personales</h2>
 				</header>
 				<p>
 					Urbanizacion Milann<br>
@@ -37,36 +42,42 @@
 				</p>
 			</div>
 			
-			<div class="bloque" id="educacion">
+			<div class="bloque col-8" id="educacion">
 				<header>
 					<h2>Educacion</h2>
 				</header>
-				<img src="ESPOL.png" alt="Oh crap">
-				<div id="info">
-					<h3>Universidad</h3>
-					<p><em>2015 - Actualidad</em></p>
-					<p>
-						Fundamentos de programacion<br>
-						Programacion Orientada a Objetos<br>
-						Estructura de Datos<br>
-						Diseño de Software<br>
-						Programacion de Sistemas
-					</p>
+				<div class="info-educacion col-12">
+					<img src="ESPOL.png" alt="Oh crap">
+					<div id="info col-12">
+						<h3>Universidad</h3>
+						<p><em>2015 - Actualidad</em></p>
+						<p>
+							Fundamentos de programacion<br>
+							Programacion Orientada a Objetos<br>
+							Estructura de Datos<br>
+							Diseño de Software<br>
+							Programacion de Sistemas
+						</p>
+					</div>
 				</div>
+				
 				<hr>
-				<img src="logo-negro-es.png" alt="Oh crap">
-				<div id="info">
-					<h3>Colegio</h3>
-					<p><em>2009 - 2015</em></p>
-					<p>
-						Fundamentos de programacion<br>
-						Programacion Orientada a Objetos<br>
-						Estructura de Datos
-					</p>
+
+				<div class="info-educacion col-12">
+					<img src="logo-negro-es.png" alt="Oh crap">
+					<div id="info col-12">
+						<h3>Colegio</h3>
+						<p><em>2009 - 2015</em></p>
+						<p>
+							Fundamentos de programacion<br>
+							Programacion Orientada a Objetos<br>
+							Estructura de Datos
+						</p>
+					</div>	
 				</div>
 			</div>
 			
-			<div class="bloque" id="habilidades">
+			<div id="habilidades" class="bloque col-8" id="habilidades">
 				<header>
 					<h2>Habilidades Tecnicas</h2>
 				</header>

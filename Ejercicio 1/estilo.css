@@ -1,15 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+}
+
 header > h1 {
 	text-align: center;
 }
 
 .bloque {
 	border: 2pt solid #cbccc1;
-	width: 560px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 7pt;
 	margin-bottom: 7pt;
 	padding: 9pt;
+	margin-left: 16.66%;
 }
 
 .bloque header h2 {
@@ -73,10 +92,93 @@ div#info {
 }
 
 hr { 
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+	clear: both;
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+@media screen and (max-width: 800px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+
+	hr {
+		display: none
+	}
+
+	#titulo-datos {
+		display: none;
+	}
+
+	header h1 {
+		display: none;
+	}
+
+	.bloque h2 {
+		text-align: center;
+	}
+
+	.bloque {
+		margin-left: 0;
+		border: 2pt solid #cbccc1;
+		background-color: #d4e3fc;
+		border-radius: 25px;
+
+	}
+
+	img {
+		width: 50%;
+	}
+
+	.info-educacion {
+		width: 50%;
+		margin: 0;
+		padding: 0;
+	}
+
+	span#info, div#info {
+		padding: 0;
+	}
+
+	#info h3, #info p {
+		text-align: center;
+	}
+
+	.encabezado {
+		border: 2pt solid #cbccc1;
+		background-color: white;
+		border-radius: 25px;
+	}
+
+	#nombre {
+		font-size: 1em;
+		border: 2pt solid #cbccc1;
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 12.5px;
+		width: 50%;
+	}
+
+	#encabezado span {
+		display: inline-block;
+		width: 50%;
+		background-color: white;
+		border-radius: 20px;
+	}
+
+	.bloque span > img {
+		border-radius: 50%;
+	}
+
+	.center {
+		position: absolute;
+		left: 0;
+		top: 80%;
+		width: 100%;
+		text-align: center;
+	}
+
 }

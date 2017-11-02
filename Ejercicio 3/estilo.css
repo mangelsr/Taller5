@@ -25,22 +25,6 @@
 	text-shadow: 2px 2px 10px #bc8609; 
 }
 
-/*
-Los  resúmenes  de  recetas  están  compuestos  por:  
-a.   Una  caja  con  bordes  redondeados,  utilice  el  selector  avanzado  ~  
-b.   Una  imagen  de  fondo  
-c.   Aplique  la  propiedad  font-­variant:  small-­caps  al  título  de  la  receta  
-d.   La  categoría  de  la  receta  tiene  color  #d69f2a  
-e.   El  texto  con  la  descripción  tiene  un  relleno  de  2px,  respecto  a  la  categoría.  
-f.   Al  pasar  el  mouse  sobre  la  imagen,  cambia  a  una  opacidad  de  0.7  
-g.   El  margen  de  separación  entre  las  recetas  es  de  10px  
-h.   El  nombre  de  la  receta  tiene  un  conjunto  de  comportamientos  especiales  
-i.   Es  un  enlace  que  por  defecto  tiene  color  #db990a  y  está  subrayado  
-ii.   Al  pasar  el  mouse  sobre  el  texto,  desaparece  el  subrayado  y  tiene  un  color  
-#edc163  
-iii.   Y  luego  de  ser  visitado,  toma  el  color:  #7c652e  
-*/
-
 body {
 	background-color: white;
 }
@@ -59,7 +43,8 @@ hr {
 	margin: 5px;
 	display: inline-block;
 	padding: 5px;
-	background-color: gray;
+	background-image: url('fondomini.jpg');
+	background-size: 100% 100%;
 }
 
 .resumen-receta > h3 {
@@ -144,6 +129,15 @@ hr {
 		width: 50%;
 		padding: 5px;
 		border: none;
+		position: relative;
+	}
+
+	.center {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		text-align: center;
 	}
 
 	.detalle-receta  p {
