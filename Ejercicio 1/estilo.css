@@ -1,0 +1,82 @@
+header > h1 {
+	text-align: center;
+}
+
+.bloque {
+	border: 2pt solid #cbccc1;
+	width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7pt;
+	margin-bottom: 7pt;
+	padding: 9pt;
+}
+
+.bloque header h2 {
+	margin-top: 0pt;
+	margin-bottom: 7pt;
+}
+
+.bloque p, h3 {
+	margin-top: 0pt;
+}
+
+#educacion img {
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+}
+
+#datos > header > h2 {
+	text-align: center;
+}
+
+#foto img {
+	width: 135px;
+	height: 150px;
+}
+
+span#info {
+	float: right;
+	padding-right: 100pt;
+}
+
+div#info {
+	padding-left: 10pt;
+	padding-bottom: 10pt;
+	display: inline-block;
+}
+
+#habilidades #hab {
+	text-align: center;
+	border: 1pt solid grey;
+	border-radius: 25px;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	padding-right: 7pt;
+	display: inline-block;
+	margin-left: 20pt;
+	margin-right: auto;
+	box-shadow: 2px 2px 5px grey;
+}
+
+#hab #num {
+	font-size: 15px;
+	border: 1pt solid blue;
+	border-radius: 25px;
+	padding: 10pt;
+	display: inline-block;
+	background-color: blue;
+	color: white;
+	margin-right: 5pt;
+}
+
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
