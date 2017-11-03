@@ -106,28 +106,20 @@ hr {
 		width: 100%;
 	}
 
-	hr {
+	hr, #titulo-datos, header h1 {
 		display: none
 	}
 
-	#titulo-datos {
-		display: none;
-	}
-
-	header h1 {
-		display: none;
-	}
-
-	.bloque h2 {
+	#educacion, #habilidades, #info h3, #info p {
 		text-align: center;
 	}
 
 	.bloque {
-		margin-left: 0;
+		width: 70%;
+		margin-left: 115px;
 		border: 2pt solid #cbccc1;
 		background-color: #d4e3fc;
 		border-radius: 25px;
-
 	}
 
 	img {
@@ -144,14 +136,12 @@ hr {
 		padding: 0;
 	}
 
-	#info h3, #info p {
-		text-align: center;
+	#encabezado {
+		margin-top: 25px;
 	}
 
-	.encabezado {
-		border: 2pt solid #cbccc1;
-		background-color: white;
-		border-radius: 25px;
+	#encabezado #foto, #encabezado #info {
+		margin-left: 125px;
 	}
 
 	#nombre {
@@ -174,11 +164,41 @@ hr {
 	}
 
 	.center {
-		position: absolute;
 		left: 0;
 		top: 80%;
 		width: 100%;
 		text-align: center;
+	}
+
+	.container {
+		position: relative;
+		margin-bottom: 7pt;
+	}
+
+	.center h2 {
+		bottom: 5px;
+		right: 124px;
+		position: absolute;
+	}
+
+	#foto {
+		border: 2pt solid #cbccc1;
+		box-shadow: 0px 2px 7pt black;
+	}
+
+	#foto img {
+		margin-left: 55px;
+	}
+
+	#hab {
+		margin-top: 7pt;
+		padding-left: 20px;
+		padding-right: 20px;
+		float: left;
+	}
+
+	#habilidades header h2 {
+		margin-bottom: 0;
 	}
 
 }
