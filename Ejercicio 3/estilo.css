@@ -43,8 +43,7 @@ hr {
 	margin: 5px;
 	display: inline-block;
 	padding: 5px;
-	background-image: url('fondomini.jpg');
-	background-size: 100% 100%;
+	background-color: lightslategray;
 }
 
 .resumen-receta > h3 {
